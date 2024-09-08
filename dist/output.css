@@ -1172,6 +1172,10 @@ header {
     font-size: 1.7rem;
   }
 
+  html{
+    scrollbar-width: none;
+  }
+
   .my-container .scrollable-content .interests .icon-list .last-icon {
     padding-bottom: 50px;
   }

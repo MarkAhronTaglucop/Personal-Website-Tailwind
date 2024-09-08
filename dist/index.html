@@ -20,14 +20,21 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/428648f03a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style>
+        html{
+    scrollbar-width: none;
+  }
+    </style>
 </head>
 
 <body>
     <div class="my-container">
         <div class="static-content">
             <header>
-                <a class="name leading-none text-[3rem] lg:text-[3,5rem] xl:text-[4rem]" href="./index.html">Mark Ahron
-                    Taglucop
+                <a class="name leading-none text-[3rem] lg:text-[3,5rem] xl:text-[4rem]" href="./index.html">
+                    <span class="typedText"></span>
                 </a>
                 <p class="role text-[1.5rem] text-red-300 leading-relaxed">
                     BSIT - Student
@@ -269,7 +276,66 @@
         menuToggle.addEventListener("click", function () {
             mobileMenu.classList.toggle("hidden");
         });
+
+
+            
+        var typingEffect = new Typed(".typedText",{
+            strings : ["Mark Ahron Taglucop", " "],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 2000
+        })
+        
+        
+        /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+         const sr = ScrollReveal({
+                origin: 'top',
+                distance: '80px',
+                duration: 2000,
+                reset: true     
+         })
+        
+        /* -- HOME -- */
+        sr.reveal('.plskill',{delay: 500})
+        sr.reveal('.static-content',{delay: 100})
+        sr.reveal('.lfskill',{delay: 500})
+        sr.reveal('.tpskill',{delay: 500})
+        sr.reveal('.tskill',{delay: 700})
+        
+        
+        /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
+        
+        /* -- ABOUT INFO & CONTACT INFO -- */
+        const srLeft = ScrollReveal({
+          origin: 'left',
+          distance: '80px',
+          duration: 2000,
+          reset: true
+        })
+        
+        srLeft.reveal('.contacttop, .textsend',{delay: 200})
+        srLeft.reveal('.infotext, .icons',{delay: 500})
+        srLeft.reveal('.name1',{delay: 200})
+        srLeft.reveal('.email1',{delay: 300})
+        srLeft.reveal('.message2',{delay: 500})
+        srLeft.reveal('.message1',{delay: 500})
+        
+        /* -- ABOUT SKILLS & FORM BOX -- */
+        const srRight = ScrollReveal({
+          origin: 'right',
+          distance: '80px',
+          duration: 2000,
+          reset: true
+        })
+        
+        srRight.reveal('.butsend',{delay: 100})
+        srRight.reveal('.form-control',{delay: 100})
     </script>
+
+    
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 
 </html>
