@@ -8,25 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
         content="Discover Cátia Monteiro's portfolio showcasing expertise in web development. Contact for collaborations and more." />
-    <link rel="stylesheet" type="text/css" media="screen" href="./main.css?v=1.0" />
 
-    <link href="output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/projects.css" />
-    <link rel="stylesheet" href="./css/skills.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/428648f03a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/428648f03a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    
+
     <style>
         html{
     scrollbar-width: none;
+    overflow-y: scroll;
   }
     </style>
+    
 </head>
 
 <body>
@@ -34,7 +37,7 @@
         <div class="static-content">
             <header>
                 <a class="name leading-none text-[3rem] lg:text-[3,5rem] xl:text-[4rem]" href="./index.html">
-                    <span class="typedText"></span>
+                    <span id="hehe" class="typedText"></span>
                 </a>
                 <p class="role text-[1.5rem] text-red-300 leading-relaxed">
                     BSIT - Student
@@ -64,7 +67,33 @@
 
         <!-- Main Content -->
         <div class="scrollable-content py-8">
-
+            <div class="temponav block lg:hidden xl:hidden">
+                <a class="name leading-none text-[3rem] lg:text-[3,5rem] xl:text-[4rem]" href="./index.html">Mark Ahron
+                    Taglucop
+                </a>
+                <p class="role text-[1.5rem] text-red-300 leading-relaxed">
+                    BSIT - Student
+                </p>
+                <p class="role-descr text-[1.1rem] text-red-300 leading-snug w-full max-w-[400px]">
+                    I'm learning to be a fullstack developer and being an entrepreneur
+                </p>
+        
+                <nav class="menu">
+                    <a class="menu-link text-sm lg:text-lg" href="./index.html">About</a>
+                    <a class="menu-link text-sm lg:text-lg" href="./skills.html">Skills</a>
+                    <a class="menu-link text-sm lg:text-lg" href="./contact.html">Contact</a>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com" target="_blank" style="color: rgb(161, 161, 161)"><i
+                                class="fa-brands fa-linkedin text-3xl"></i></a>
+                        <a href="https://github.com/MarkAhronTaglucop" target="_blank"
+                            style="color: rgb(161, 161, 161)"><i class="fa-brands fa-github text-3xl"></i></a>
+                        <a href="https://www.instagram.com/markyy_ah/" target="_blank"
+                            style="color: rgb(161, 161, 161)"><i class="fa-brands fa-square-instagram text-3xl"></i></a>
+                        <a href="https://www.facebook.com/markahron.taglucop01" target="_blank"
+                            style="color: rgb(161, 161, 161)"><i class="fa-brands fa-facebook text-3xl"></i></a>
+                    </div>
+                </nav>
+            </div> 
             <h2 class="page-title font-extrabold text-3xl mt-5 sm:mt-12">About.</h2>
             <h2 class="senior text-gray-500 font-bold text-2xl">3rd year STUDENT.</h2>
             <h2 class="junior pb-14 text-gray-300 font-bold text-2xl">
@@ -93,7 +122,7 @@
                 <h3 class="sub-title font-bold text-3xl pt-20 pb-14">Education</h3>
 
                 <section class="webdev">
-                    <div class="years">
+                    <div class="years yearsy">
                         <p class="text-gray-400">2022 - 2024</p>
                     </div>
 
@@ -117,18 +146,18 @@
                 </section>
 
                 <section class="yoga pt-10">
-                    <div class="years">
+                    <div class="years yearsy">
                         <p class="text-gray-400">2019 - 2021</p>
                     </div>
 
                     <div class="title">
                         <h3 class="font-semibold">
                             Secondary School ·
-                            <a class="underline" href="https://www.casa-da-alma.com/" target="_blank">
+                            <a class="underline descr" href="https://www.casa-da-alma.com/" target="_blank">
                                 Agusan National Highschool</a>
                         </h3>
                     </div>
-                    <div class="descr">
+                    <div class="descr years">
                         <p class="text-gray-400">
                             6 years in secondary school
                         </p>
@@ -136,14 +165,14 @@
                 </section>
 
                 <section class="bachelor pt-10">
-                    <div class="years">
+                    <div class="years yearsy">
                         <p class="text-gray-400">2009 - 20016</p>
                     </div>
 
                     <div class="title">
                         <h3 class="font-semibold">
                             Primary School Graduate ·
-                            <a class="underline" href="https://www.uminho.pt/EN/Pages/default.aspx"
+                            <a class="underline descr" href="https://www.uminho.pt/EN/Pages/default.aspx"
                                 target="_blank">Pinana-an Las Nieves Agusan Del Norte</a>
                         </h3>
                     </div>
@@ -216,43 +245,43 @@
             <div class="interests">
                 <h3 class="sub-title font-bold text-3xl pt-20 pb-14">Interests</h3>
                 <div class="icon-list grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="flex items-center">
+                    <div class="flex items-center int1">
                         <span class="material-icons text-red-400 text-4xl mr-4">palette</span>
                         <p class="leading-relaxed text-lg text-gray-400">Art</p>
                     </div>
 
-                    <div class="flex items-center">
+                    <div class="flex items-center int2">
                         <span class="material-icons text-red-400 text-4xl mr-4">menu_book</span>
                         <p class="leading-relaxed text-lg text-gray-400">Reading</p>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center int3">
                         <span class="material-icons text-red-400 text-4xl mr-4">brush</span>
                         <p class="leading-relaxed text-lg text-gray-400">Design</p>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center int4">
                         <span class="material-icons text-red-400 text-4xl mr-4">local_cafe</span>
                         <p class="leading-relaxed text-lg text-gray-400">
                             Coffee and cake
                         </p>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center int5">
                         <span class="material-icons text-red-400 text-4xl mr-4">music_note</span>
                         <p class="leading-relaxed text-lg text-gray-400">Music</p>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center int6">
                         <span class="material-icons text-red-400 text-4xl mr-4">people</span>
                         <p class="leading-relaxed text-lg text-gray-400">
                             People watching
                         </p>
                     </div>
 
-                    <div class="flex items-center">
+                    <div class="flex items-center int7">
                         <span class="material-icons text-red-400 text-4xl mr-4">self_improvement</span>
                         <p class="leading-relaxed text-lg text-gray-400">
                             Personal development
                         </p>
                     </div>
-                    <div class="last-icon flex items-center">
+                    <div class="last-icon flex items-center int8">
                         <span class="material-icons text-red-400 text-4xl mr-4">pets</span>
                         <p class="leading-relaxed text-lg text-gray-400">
                             Cats and dogs
@@ -269,23 +298,19 @@
 
     <script>
         // Toggle mobile menu
-        const menuToggle = document.getElementById("menu-toggle");
-        const navbar = document.getElementById("navbar");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        menuToggle.addEventListener("click", function () {
-            mobileMenu.classList.toggle("hidden");
-        });
 
 
             
-        var typingEffect = new Typed(".typedText",{
-            strings : ["Mark Ahron Taglucop", " "],
-            loop : true,
-            typeSpeed : 100,
-            backSpeed : 80,
-            backDelay : 2000
-        })
+        document.addEventListener("DOMContentLoaded", function() {
+        var typingEffect = new Typed("#hehe", {
+            strings: ["Mark Ahron Taglucop", " "],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 2000
+        });
+    });
+
         
         
         /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
@@ -298,7 +323,7 @@
         
         /* -- HOME -- */
         sr.reveal('.plskill',{delay: 500})
-        sr.reveal('.static-content',{delay: 100})
+        sr.reveal('.static-content',{delay: 200})
         sr.reveal('.lfskill',{delay: 500})
         sr.reveal('.tpskill',{delay: 500})
         sr.reveal('.tskill',{delay: 700})
@@ -314,12 +339,22 @@
           reset: true
         })
         
-        srLeft.reveal('.contacttop, .textsend',{delay: 200})
-        srLeft.reveal('.infotext, .icons',{delay: 500})
-        srLeft.reveal('.name1',{delay: 200})
-        srLeft.reveal('.email1',{delay: 300})
-        srLeft.reveal('.message2',{delay: 500})
-        srLeft.reveal('.message1',{delay: 500})
+        srLeft.reveal('.senior, .sub-title',{delay: 300})
+        srLeft.reveal('.junior, .imgabout',{delay: 500})
+        srLeft.reveal('.yearsy',{delay: 200})
+        srLeft.reveal('.int1',{delay: 100})
+        srLeft.reveal('.int2',{delay: 200})
+        srLeft.reveal('.int3',{delay: 300})
+        srLeft.reveal('.int4',{delay: 400})
+        srLeft.reveal('.int5',{delay: 500})
+        srLeft.reveal('.int6',{delay: 600})
+        srLeft.reveal('.int7',{delay: 700})
+        srLeft.reveal('.int8',{delay: 800})
+
+
+
+        srLeft.reveal('.page-title',{delay: 200})
+
         
         /* -- ABOUT SKILLS & FORM BOX -- */
         const srRight = ScrollReveal({
@@ -329,13 +364,18 @@
           reset: true
         })
         
-        srRight.reveal('.butsend',{delay: 100})
+        srRight.reveal('.text-about',{delay: 300})
+        srRight.reveal('.font-semibold',{delay: 300})
         srRight.reveal('.form-control',{delay: 100})
+        srRight.reveal('.descr',{delay: 500})
+        
     </script>
-
-    
+<!-- External Scripts -->
+<script src="https://kit.fontawesome.com/428648f03a.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+
+
 </body>
 
 </html>

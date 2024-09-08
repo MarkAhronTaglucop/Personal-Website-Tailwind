@@ -20,7 +20,8 @@
     <script src="https://kit.fontawesome.com/428648f03a.js" crossorigin="anonymous"></script>
     <link href="output.css" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 
     <style>
         html{
@@ -34,7 +35,7 @@
         <div class="static-content">
             <header>
                 <a class="name leading-none text-[3rem] lg:text-[3,5rem] xl:text-[4rem]" href="./index.html">
-                    <span class="typedText"></span>
+                    <span id="hehe" class="typedText"></span>
                 </a>
                 <p class="role text-[1.5rem] text-red-300 leading-relaxed">
                     BSIT - Student
@@ -145,7 +146,7 @@
 
     <script>
     
-        var typingEffect = new Typed(".typedText",{
+        var typingEffect = new Typed("#hehe",{
             strings : ["Mark Ahron Taglucop", " "],
             loop : true,
             typeSpeed : 100,
@@ -168,6 +169,7 @@
         sr.reveal('.lfskill',{delay: 500})
         sr.reveal('.tpskill',{delay: 500})
         sr.reveal('.tskill',{delay: 700})
+        sr.reveal('.temponav',{delay: 200})
         
         
         /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
