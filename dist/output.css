@@ -582,10 +582,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
